@@ -5,7 +5,7 @@
 // file LICENSE at the root of the source code distribution tree.
 
 import Foundation
-import TrezorCrypto
+import NewTrezorCrypto
 
 public final class Mnemonic {
     /// Generates a menmoic string with the given strength in bits.
