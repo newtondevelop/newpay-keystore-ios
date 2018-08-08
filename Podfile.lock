@@ -7,14 +7,14 @@ PODS:
     - TrezorCrypto
   - SipHash (1.2.2)
   - SwiftLint (0.26.0)
-  - TrezorCrypto (0.0.5)
+  - TrezorCrypto (0.0.6)
 
 DEPENDENCIES:
   - BigInt
   - CryptoSwift (~> 0.10.0)
   - "NewPayCore (from `git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git`, branch `master`)"
   - SwiftLint
-  - TrezorCrypto
+  - "TrezorCrypto (from `git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git`, branch `master`)"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -22,17 +22,22 @@ SPEC REPOS:
     - CryptoSwift
     - SipHash
     - SwiftLint
-    - TrezorCrypto
 
 EXTERNAL SOURCES:
   NewPayCore:
     :branch: master
     :git: "git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git"
+  TrezorCrypto:
+    :branch: master
+    :git: "git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git"
 
 CHECKOUT OPTIONS:
   NewPayCore:
     :commit: 50bf73a47c4ff73931671982376b29ae97edf41a
     :git: "git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git"
+  TrezorCrypto:
+    :commit: e6e557750f5672c87bdb6c0c9eecca929fbfb919
+    :git: "git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git"
 
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
@@ -40,8 +45,8 @@ SPEC CHECKSUMS:
   NewPayCore: dcb53894d142025fb518211479b08acf1b348c92
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
-  TrezorCrypto: ecef681446bf02af6248d3b5e394026d7e766e56
+  TrezorCrypto: bea2dab002f9a5fe885df004694b9ece52dc088b
 
-PODFILE CHECKSUM: bf8452d9b3070c6be909a8847ca6dba1392123cf
+PODFILE CHECKSUM: f3c9ad8066696fe0a11c238abdf9e6d171455ee7
 
 COCOAPODS: 1.5.3

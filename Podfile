@@ -5,7 +5,7 @@ target 'TrustKeystore' do
 
   pod 'BigInt'
   pod 'CryptoSwift', '~> 0.10.0'
-  pod 'TrezorCrypto', inhibit_warnings: true
+  pod 'TrezorCrypto', :git=>'git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git', :branch=>'master' 
   pod 'NewPayCore', :git=>'git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git', :branch=>'master'
   pod 'SwiftLint'
 
