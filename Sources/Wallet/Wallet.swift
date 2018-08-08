@@ -8,7 +8,8 @@ import TrezorCrypto
 
 /// A hierarchical deterministic wallet.
 public class Wallet {
-    public static let defaultPath = "m/44'/60'/0'/0/x"
+    //public static let defaultPath = "m/44'/60'/0'/0/x"
+    public static let defaultPath = "m/44'/1624'/0'/0/x"
 
     /// Wallet seed.
     public var seed: Data
