@@ -85,7 +85,7 @@ public final class KeyStore {
         defer {
             privateKey.resetBytes(in: 0..<privateKey.count)
         }
-
+        
         let newKey : KeystoreKey
         switch key.type {
         case .encryptedKey:
