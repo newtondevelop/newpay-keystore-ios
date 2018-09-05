@@ -85,7 +85,7 @@ public final class KeyStore {
         defer {
             privateKey.resetBytes(in: 0..<privateKey.count)
         }
-        
+
         let newKey : KeystoreKey
         switch key.type {
         case .encryptedKey:
@@ -159,7 +159,7 @@ public final class KeyStore {
             guard let string = String(data: privateKey, encoding: .ascii) else {
                 throw EncryptError.invalidMnemonic
             }
-            newKey = try KeystoreKey(password: newPassword, mnemonic: string, passphrase: key.passphrase, derivationPath: key.derivationPath)
+            newKey = try KeystoreKey(password: newPassword, mnemonic: stringstring.trimmingCharacters(in: .whitespaces), passphrase: key.passphrase, derivationPath: key.derivationPath)
         }
         return try JSONEncoder().encode(newKey)
     }

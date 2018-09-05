@@ -25,8 +25,8 @@ public class Wallet {
 
     /// Initializes a wallet from a mnemonic string and a passphrase.
     public init(mnemonic: String, passphrase: String = "", path: String = Wallet.defaultPath) {
-        seed = Mnemonic.deriveSeed(mnemonic: mnemonic, passphrase: passphrase)
-        self.mnemonic = mnemonic
+        self.mnemonic = mnemonic.trimmingCharacters(in: .whitespaces)
+        seed = Mnemonic.deriveSeed(mnemonic: self.mnemonic, passphrase: passphrase)
         self.passphrase = ""
         self.path = path
     }
