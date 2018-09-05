@@ -86,7 +86,14 @@ public final class KeyStore {
             privateKey.resetBytes(in: 0..<privateKey.count)
         }
 
-        let newKey = try KeystoreKey(password: newPassword, key: privateKey)
+        let newKey : KeystoreKey
+        switch key.type {
+        case .encryptedKey:
+            newKey = try KeystoreKey(password: newPassword, key: privateKey)
+        case .hierarchicalDeterministicWallet:
+            newKey = try KeystoreKey(password: newPassword, mnemonic:String(data: privateKey, encoding: String.Encoding.utf8)!, passphrase: "", derivationPath:key.derivationPath)
+        }
+
         keysByAddress[newKey.address] = newKey
 
         let url = makeAccountURL(for: key.address)
