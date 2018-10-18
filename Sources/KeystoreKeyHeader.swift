@@ -37,8 +37,12 @@ public struct KeystoreKeyHeader {
 
     /// Initializes a `KeystoreKeyHeader` by encrypting data with a password with standard values.
     public init(password: String, data: Data) throws {
+        var salt = Data(repeating: 0, count: 32)
+        let result = salt.withUnsafeMutableBytes { p in
+            SecRandomCopyBytes(kSecRandomDefault, 32, p)
+        }
         let cipherParams = CipherParams()
-        let kdfParams = ScryptParams()
+        let kdfParams = try ScryptParams(salt: salt, n: ScryptParams.standardN, r: ScryptParams.defaultR, p: ScryptParams.standardP, desiredKeyLength: 32)
 
         let scrypt = Scrypt(params: kdfParams)
         let derivedKey = try scrypt.calculate(password: password)
