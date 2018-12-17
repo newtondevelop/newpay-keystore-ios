@@ -191,6 +191,27 @@ public final class KeyStore {
         }
     }
 
+    public func exportPublicKey(account: Account, password: String) throws -> Data {
+        guard let key = keysByAddress[account.address] else {
+            fatalError("Missing account key")
+        }
+
+        var privateKey = try key.decrypt(password: password)
+        defer {
+            privateKey.resetBytes(in: 0..<privateKey.count)
+        }
+
+        switch key.type {
+        case .encryptedKey:
+            return privateKey
+        case .hierarchicalDeterministicWallet:
+            guard let string = String(data: privateKey, encoding: .ascii) else {
+                throw EncryptError.invalidMnemonic
+            }
+            return Wallet(mnemonic: string, passphrase: key.passphrase, path: key.derivationPath).getKey(at: 0).publicKey
+        }
+    }
+
     /// Exports an account as a mnemonic phrase.
     ///
     /// - Parameters:
