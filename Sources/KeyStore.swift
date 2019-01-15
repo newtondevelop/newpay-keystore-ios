@@ -203,6 +203,7 @@ public final class KeyStore {
 
         switch key.type {
         case .encryptedKey:
+            let publickey = EthereumCrypto.getPublicKey(from: privateKey)
             return privateKey
         case .hierarchicalDeterministicWallet:
             guard let string = String(data: privateKey, encoding: .ascii) else {
