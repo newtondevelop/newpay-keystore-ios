@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
   s.version      = '0.0.1'
   s.summary      = 'A general-purpose Ethereum keystore for managing wallets.'
   s.homepage     = 'https://github.com/TrustWallet/trust-keystore'
-  s.license      = 'GPL'
-  s.authors      = { 'Alejandro Isaza' => 'al@isaza.ca' }
+  s.license      = { type: 'GPLv3', file: 'LICENSE' }
+  s.authors      = { 'newtonproject' => 'newton-app@newtonproject.org' }
   
   s.ios.deployment_target = '10.0'
 
