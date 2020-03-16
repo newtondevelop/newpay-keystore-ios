@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors      = { 'newtonproject' => 'newton-app@newtonproject.org' }
   
   s.ios.deployment_target = '10.0'
-
+  s.swift_version = '4.0'
   s.source       = { git: 'git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-keystore.git', tag: s.version }
   s.source_files = "Sources/**/*.swift"
 
