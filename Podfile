@@ -1,6 +1,6 @@
 platform :ios, '9.0'
 
-target 'TrustKeystore' do
+target 'NewpayKeystore' do
   use_frameworks!
 
   pod 'BigInt'
@@ -10,5 +10,5 @@ target 'TrustKeystore' do
   pod 'SwiftLint'
 
   target 'KeystoreBenchmark'
-  target 'TrustKeystoreTests'
+  target 'NewpayKeystoreTests'
 end
