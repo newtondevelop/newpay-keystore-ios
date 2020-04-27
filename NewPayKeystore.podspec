@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'NewPayKeystore'
+  s.name         = 'NewpayKeystore'
   s.version      = '0.0.1'
   s.summary      = 'A general-purpose Ethereum keystore for managing wallets.'
   s.homepage     = 'https://github.com/newtondevelop/newpay-keystore-ios'
