@@ -1,14 +1,14 @@
 platform :ios, '9.0'
 
-target 'TrustKeystore' do
+target 'NewpayKeystore' do
   use_frameworks!
 
   pod 'BigInt'
   pod 'CryptoSwift', '~> 0.10.0'
-  pod 'NewTrezorCrypto', :git=>'git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git', :branch=>'master' 
-  pod 'NewPayCore', :git=>'git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git', :branch=>'master'
+  pod 'NewpayCrypto', :git=>'https://github.com/newtondevelop/newpay-crypto-ios.git', :branch=>'master' 
+  pod 'NewpayContractUtility', :git=>'https://github.com/newtondevelop/newpay-contract-utility-ios.git', :branch=>'master' 
   pod 'SwiftLint'
 
   target 'KeystoreBenchmark'
-  target 'TrustKeystoreTests'
+  target 'NewpayKeystoreTests'
 end
