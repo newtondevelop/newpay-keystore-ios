@@ -41,4 +41,4 @@ behavior violating this base foundation of respect.
 
 ## License
 
-NewPay Keystore is available under the GNU GPL. See the [LICENSE](/blob/patch-1/LICENSE) file for more info.
+NewPay Keystore is available under the GNU GPL. See the [LICENSE](LICENSE) file for more info.
