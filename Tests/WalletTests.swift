@@ -4,7 +4,7 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-import NewTrezorCrypto
+import NewpayCrypto
 import TrustCore
 @testable import TrustKeystore
 import XCTest

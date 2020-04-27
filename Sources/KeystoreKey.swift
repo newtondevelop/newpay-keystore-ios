@@ -7,7 +7,7 @@
 import CryptoSwift
 import Foundation
 import Security
-import NewPayCore
+import NewpayContractUtility
 
 /// Key definition.
 public struct KeystoreKey {

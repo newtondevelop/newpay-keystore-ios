@@ -4,8 +4,8 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-import NewTrezorCrypto
-import NewPayCore
+import NewpayCrypto
+import NewpayContractUtility
 
 // Hierarchical deterministic key.
 public class HDKey {
