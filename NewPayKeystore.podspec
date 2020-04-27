@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.0'
-  s.source       = { git: 'https://github.com/yheng2/newpay-keystore-ios.git', tag: s.version }
+  s.source       = { git: 'https://github.com/newtondevelop/newpay-keystore-ios.git', tag: s.version }
   s.source_files = "Sources/**/*.swift"
 
   s.dependency 'BigInt'
