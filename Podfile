@@ -5,8 +5,8 @@ target 'TrustKeystore' do
 
   pod 'BigInt'
   pod 'CryptoSwift', '~> 0.10.0'
-  pod 'NewTrezorCrypto', :git=>'git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git', :branch=>'master' 
-  pod 'NewPayCore', :git=>'git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git', :branch=>'master'
+  pod 'NewpayCrypto', :git=>'https://github.com/yheng2/newpay-crypto-ios.git', :branch=>'master' 
+  pod 'NewpayContractUtility', :git=>'https://github.com/yheng2/newpay-contract-utility-ios.git', :branch=>'master' 
   pod 'SwiftLint'
 
   target 'KeystoreBenchmark'

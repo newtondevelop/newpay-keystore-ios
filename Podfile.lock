@@ -2,51 +2,51 @@ PODS:
   - BigInt (3.1.0):
     - SipHash (~> 1.2)
   - CryptoSwift (0.10.0)
-  - NewPayCore (0.0.1):
+  - NewpayContractUtility (0.0.1):
     - BigInt
-    - NewTrezorCrypto
-  - NewTrezorCrypto (0.1.0)
+    - NewpayCrypto
+  - NewpayCrypto (0.1.0)
   - SipHash (1.2.2)
   - SwiftLint (0.26.0)
 
 DEPENDENCIES:
   - BigInt
   - CryptoSwift (~> 0.10.0)
-  - "NewPayCore (from `git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git`, branch `master`)"
-  - "NewTrezorCrypto (from `git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git`, branch `master`)"
+  - NewpayContractUtility (from `https://github.com/yheng2/newpay-contract-utility-ios.git`, branch `master`)
+  - NewpayCrypto (from `https://github.com/yheng2/newpay-crypto-ios.git`, branch `master`)
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - BigInt
     - CryptoSwift
     - SipHash
     - SwiftLint
 
 EXTERNAL SOURCES:
-  NewPayCore:
+  NewpayContractUtility:
     :branch: master
-    :git: "git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git"
-  NewTrezorCrypto:
+    :git: https://github.com/yheng2/newpay-contract-utility-ios.git
+  NewpayCrypto:
     :branch: master
-    :git: "git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git"
+    :git: https://github.com/yheng2/newpay-crypto-ios.git
 
 CHECKOUT OPTIONS:
-  NewPayCore:
-    :commit: 1a64fc896c44be8d02cc6b76bead58cd8573bd0c
-    :git: "git@gitlab.newtonproject.org:xiawu/newton-newpay-ios-core.git"
-  NewTrezorCrypto:
-    :commit: 4601bc5e114bcbba24589300e5fc3cfa09ac46f3
-    :git: "git@gitlab.newtonproject.org:xiawu/newton-trezor-crypto-ios.git"
+  NewpayContractUtility:
+    :commit: cd78dcfd2581e2673a4361c0dfd40cc23a30ff5e
+    :git: https://github.com/yheng2/newpay-contract-utility-ios.git
+  NewpayCrypto:
+    :commit: 3cf5d9b7d69116398fa30deb54928d225bbb7cc3
+    :git: https://github.com/yheng2/newpay-crypto-ios.git
 
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
   CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
-  NewPayCore: 0b795d5f46c2ebc90ce9ed0a9101dbb5acb5feb4
-  NewTrezorCrypto: dda12815cbcfd30a27f1586460bad6c2511a22bb
+  NewpayContractUtility: 46642cc509ece667a13ad394b228f14c6559e3b0
+  NewpayCrypto: 7f317db5bc82299410ba4995cb93f14cbcc0ef23
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
 
-PODFILE CHECKSUM: ac8ac7228773eae48c610abc83f370d0075b6ed9
+PODFILE CHECKSUM: ff4f52e64193c8d872977e7e9033f14ca97f2a75
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
