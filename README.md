@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-GPL3-green.svg?style=flat)]()
 
-A general-purpose Ethereum keystore for managing wallets. This is part of the [NewPay Wallet for iOS](https://github.com/newtondevelop/newpay-ios-example), but can be used standalone. It supports:
+A general-purpose keystore for managing wallets. This is part of the [NewPay Wallet for iOS](https://github.com/newtondevelop/newpay-ios-example), but can be used standalone. It supports:
 
 - [x] Creating new wallets from a private key
 - [x] Loading JSON wallet files
