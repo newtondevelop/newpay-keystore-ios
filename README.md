@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-GPL3-green.svg?style=flat)]()
 
-A general-purpose Ethereum keystore for managing wallets. This is part of the [Trust Ethereum Wallet for iOS](), but can be used standalone. It supports:
+A general-purpose keystore for managing wallets. This is part of the [NewPay Wallet for iOS](https://github.com/newtondevelop/newpay-ios-example), but can be used standalone. It supports:
 
 - [x] Creating new wallets from a private key
 - [x] Loading JSON wallet files
@@ -14,7 +14,7 @@ A general-purpose Ethereum keystore for managing wallets. This is part of the [T
 To install it simply add the following line to your Podfile:
 
 ```
-pod 'NewPayKeystore', :git=>'', :branch=>'master'
+pod 'NewPayKeystore', :git=>'https://github.com/newtondevelop/newpay-keystore-ios.git', :branch=>'master'
 ```
 
 ## Contributing
@@ -37,7 +37,6 @@ kind and considerate human beings who learn and grow from giving and receiving
 positive, constructive feedback. We reserve the right to delete or ban any
 behavior violating this base foundation of respect.
 
----
 
 ## License
 
